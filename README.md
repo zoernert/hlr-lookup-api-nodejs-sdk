@@ -1,3 +1,6 @@
+This repository is a fork to fix an issue with the timestamp calculation.
+
+
 # HLR Lookups SDK (NodeJS)
 
 Official HLR Lookup API SDK for NodeJS by www.hlr-lookups.com. Obtain live mobile phone connectivity and portability data from network operators directly.
@@ -33,7 +36,7 @@ Get your API key and secret [here](https://www.hlr-lookups.com/en/api-settings).
 Performs an authenticated request against the `GET /auth-test` endpoint. A status code of 200 indicates that you were able to authenticate using you [API credentials](https://www.hlr-lookups.com/en/api-settings#authSettings).
 
 ```javascript
-client.get('/auth-test', 
+client.get('/auth-test',
     null,
     function (response) {
 
@@ -245,4 +248,3 @@ Contributing
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-

@@ -1,7 +1,7 @@
 {
-  "author": "Velocity Made Good Ltd.",
-  "name": "node-hlr-client",
-  "description": "Official HLR Lookups API SDK for NodeJS by www.hlr-lookups.com",
+  "author": "Thorsten Zoerner",
+  "name": "node-hlr-client-fix",
+  "description": "Patched  version of node-hlr-client to fix issue with timestamp",
   "version": "2.0.1",
   "main": "./lib/index.js",
   "keywords": [

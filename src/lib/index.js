@@ -119,7 +119,7 @@ function Client(key, secret) {
     const buildConfig = function(extras) {
 
         // build auth signature
-        let timestamp = Date.now() / 1000 | 0;
+        let timestamp = new Date().getTime();
         let signature = crypto.createHmac('sha256', this.secret).update(extras.url + timestamp.toString() + extras.method.toUpperCase() + (extras.method === 'get' ? '' : JSON.stringify(extras.data))).digest('hex');
 
         // build request config
@@ -170,4 +170,3 @@ function Client(key, secret) {
 }
 
 module.exports = Client;
-
